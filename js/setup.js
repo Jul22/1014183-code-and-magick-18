@@ -108,7 +108,7 @@ dialogClose.addEventListener('keydown', function (evt) {
 });
 
 //  Name validation
-wizardNameInput.addEventListener('input', function () {
+wizardNameInput.addEventListener('change', function () {
   if (wizardNameInput.validity.tooShort) {
     wizardNameInput.setCustomValidity('Имя должно состоять минимум из 2-х символов');
   } else if (wizardNameInput.validity.tooLong) {
